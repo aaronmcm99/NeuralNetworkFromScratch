@@ -4,17 +4,27 @@ This repository contains a modular implementation of a neural network from scrat
 
 ## Code Structure
 
-- **Accuracy_Categorical.py**: Defines the accuracy metric for multi-classification problems.
+- **Accuracy_Categorical.py**: Defines the accuracy metric for categorical (multi-class) classification problems.
 - **Accuracy_Regression.py**: Defines the accuracy metric for regression problems.
+- **Accuracy.py**: Contains common accuracy metrics used in the neural network.
 - **Activation_Linear.py**: Implements the linear activation function.
 - **Activation_ReLU.py**: Implements the Rectified Linear Unit (ReLU) activation function.
-- **Activation_Softmax.py**: Implements the softmax activation function.
+- **Activation_Sigmoid.py**: Implements the Sigmoid activation function.
+- **Activation_Softmax_Loss_CategoricalCrossentropy.py**: Implements the Softmax activation function with the cross-entropy loss for multi-class classification.
+- **Activation_Softmax.py**: Implements the Softmax activation function.
 - **Layer_Dense.py**: Defines the dense (fully connected) layer of the neural network.
 - **Layer_Dropout.py**: Implements dropout regularization to prevent overfitting.
-- **Loss_CategoricalCrossentropy.py**: Defines the cross-entropy loss function for classification problems.
-- **Loss_MeanSquaredError.py**: Defines the mean squared error loss function.
+- **Layer_Input.py**: Defines the input layer of the neural network.
+- **Loss_BinaryCrossentropy.py**: Implements the binary cross-entropy loss function for binary classification problems.
+- **Loss_CategoricalCrossentropy.py**: Defines the categorical cross-entropy loss function for multi-class classification problems.
+- **Loss_MeanAbsoluteError.py**: Defines the mean absolute error loss function for regression problems.
+- **Loss_MeanSquaredError.py**: Defines the mean squared error loss function for regression problems.
+- **Loss.py**: Contains common loss functions used in the neural network.
 - **Model.py**: Contains the Model class, which orchestrates the neural network's layers and operations.
+- **Optimizer_Adagrad.py**: Implements the Adagrad optimizer.
 - **Optimizer_Adam.py**: Implements the Adam optimizer for gradient descent optimization.
+- **Optimizer_RMSprop.py**: Implements the RMSprop optimizer.
+- **Optimizer_SGD.py**: Implements the Stochastic Gradient Descent (SGD) optimizer.
 
 ## Usage
 
